@@ -33,9 +33,10 @@ namespace ConsoleApp1
             chrome.LoginBK();
             chrome.Login();
             chrome.GoToCRMHomePage();
-            chrome.GoToCRMCompanyTab();
-            chrome.GoTo_Reminders();
-            chrome.CRM_CreateReminder();
+            chrome.CRM_CreateCRM();
+           // chrome.GoToCRMCompanyTab();
+           // chrome.GoTo_Reminders();
+           // chrome.CRM_CreateReminder();
             
 
           

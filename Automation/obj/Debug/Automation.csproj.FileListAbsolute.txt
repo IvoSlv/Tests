@@ -23,3 +23,7 @@ C:\Users\islavchev\source\repos\Automation\Automation\bin\Debug\xunit.execution.
 C:\Users\islavchev\source\repos\Automation\Automation\bin\Debug\xunit.runner.visualstudio.testadapter.dll
 C:\Users\islavchev\source\repos\Automation\Automation\bin\Debug\xunit.runner.reporters.net452.dll
 C:\Users\islavchev\source\repos\Automation\Automation\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\ivo\Source\Repos\IvoSlv\Tests\Automation\obj\Debug\Automation.csprojAssemblyReference.cache
+C:\Users\ivo\Source\Repos\IvoSlv\Tests\Automation\obj\Debug\Automation.csproj.CoreCompileInputs.cache
+C:\Users\ivo\Source\Repos\IvoSlv\Tests\Automation\obj\Debug\Automation.dll
+C:\Users\ivo\Source\Repos\IvoSlv\Tests\Automation\obj\Debug\Automation.pdb

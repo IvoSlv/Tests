@@ -71,15 +71,18 @@ namespace Automation
             password.SendKeys("Dsa_123");
 
             webDriver.FindElement(By.XPath("//*[contains(text(),'Login')]")).Click();
-            Assert.Pass();
-            webDriver.Manage().Timeouts().(TimeSpan.FromMilliseconds(3000));
-        
+            //Assert.Pass();
+            //webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(5);
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            
+
             //password.Submit();
         }
         
 
     public void ProfileMenu()
         {
+            
             var wait = new WebDriverWait(webDriver, TimeSpan.FromMilliseconds(5000));
             var clickableElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//*[contains(@id,'Layer_1')]")));
             clickableElement.Click();
@@ -131,7 +134,7 @@ namespace Automation
         public void GoToCRMHomePage()
         {
             var wait = new WebDriverWait(webDriver, TimeSpan.FromMilliseconds(5000));
-
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             var clickableElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//*[contains(text(),'KraftCRM')]")));
             clickableElement.Click();
             //Assert.True(false, "Test false");
@@ -190,6 +193,17 @@ namespace Automation
             description.SendKeys("My new Reminder");
             webDriver.FindElement(By.XPath("//*[contains(text(),'Save')]")).Click();
 
+        }
+
+        public void CRM_CreateCRM()
+        {
+            var wait = new WebDriverWait(webDriver, TimeSpan.FromMilliseconds(5000));
+            var clickableElement = wait.Until(ExpectedConditions.ElementToBeClickable(By.XPath("//span[@class='bk-box-create-icon']")));
+            clickableElement.Click();
+            IWebElement name = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("//input[@placeholder='Name']")));
+            
+            name.SendKeys("Test_CRM");
+            webDriver.FindElement(By.XPath("//button[@id='createCRM']")).Click();
         }
 
         public void Dispose()
