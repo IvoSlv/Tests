@@ -14,7 +14,6 @@ using System.Threading;
 using System.IO;
 using System.Reflection;
 using OpenQA.Selenium.Support;
-using Xunit;
 using OpenQA.Selenium.IE;
 using System.Configuration;
 using Automation;
@@ -29,10 +28,7 @@ namespace ConsoleApp1
     {
          static void Main(string[] args)
         {
-           CRM crm = new CRM("chrome");
-
-            
-
+          
 
         }
 
